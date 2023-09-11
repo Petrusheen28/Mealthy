@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Annie+Use+Your+Telescope&family=Artifika&family=Atomic+Age&family=Barrio&family=Belleza&family=Benne&family=Bruno+Ace+SC&family=Cormorant:wght@300&family=Crafty+Girls&family=EB+Garamond&family=Federo&family=Fresca&family=Genos:ital@1&family=Geo&family=Glass+Antiqua&family=IM+Fell+DW+Pica+SC&family=IM+Fell+French+Canon+SC&family=Indie+Flower&family=Irish+Grover&family=Kotta+One&family=Kufam&family=Lacquer&family=Macondo&family=Major+Mono+Display&family=Marck+Script&family=Megrim&family=Play&family=Playfair:opsz@5..1200&family=Sedgwick+Ave&family=Share&family=Space+Mono&family=Sulphur+Point&family=Trade+Winds&family=Ubuntu+Mono&family=VT323&family=Zilla+Slab+Highlight&display=swap');
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 100vh;
+    margin: 0;
+}
+
+#background{
+    background-image: url(../Képek/tomatoes-near-mushrooms-herbs.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+main{
+    background-color: rgb(232, 235, 235);
+    padding-left: 36px;
+    padding-right: 36px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+h1{
+    font-family: 'Artifika', serif;
+}
+
+
+#picture{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 36px;
+    
+}
+
+#picture img{
+    border-radius: 10% 30%;
+    box-shadow: 5px 5px 10px gray;
+}
+
+#button-div{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 60px;
+}
+
+#button{
+    background-color: rgb(200, 233, 200);
+    border-radius: 5px;
+    color: rgb(20, 138, 20);
+    transition-duration: 250ms;
+    border: none;
+    padding: 8px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+#button:hover{
+    background-color: rgb(91, 173, 126);
+    color: white;
+}
+
+#recipe{
+    text-align: center;
+}
+
+
+#infos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: 'Kufam', sans-serif;
+}
+
+#infos span{
+    margin-top: 7px;
+}
+
+ul li{
+    margin-top: 7px;
+}
+
+ol li{
+    margin-top: 10px;
+}
+
+#name{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-family: 'Marck Script', cursive;
+}
+
+p{
+    text-decoration: underline;
+}
+
+#short-desc{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.recipe-desc{
+    font-family: 'Kufam', sans-serif;
+}
+
+
+#cooking{
+    margin-top: auto;
+}

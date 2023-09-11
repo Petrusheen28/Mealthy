@@ -58,19 +58,29 @@ header{
 
 }
 
+#plate{
+    position: absolute;
+    left: 1100px;
+    bottom: 525px;
+    filter: brightness(95%) contrast(60%);
+    
+}
+
 h1{
     margin-left: 30px;
     font-family: 'Space Mono', monospace;;
+    text-decoration: underline;
 }
 
 
-#links{
+
+.links{
     margin-top: 20px;
     margin-left: 30px;
     margin-bottom: 40px;
 }
 
-a{
+.links a{
     text-decoration: none;
     color: rgb(50, 49, 49);
     margin-right: 15px;
@@ -82,8 +92,8 @@ a{
 }
 
 
-a:hover{
-    background-color: rgb(52, 52, 50);
+.links a:hover{
+    background-color: rgb(191, 180, 117);
     color: white;
 }
 
@@ -122,44 +132,47 @@ aside{
 
 .signup{
     margin-top: 40px;
+    margin-left: 0;
     display: flex;
     flex-direction: column;
 }
 
 .signup a{
     margin-bottom: 15px;
+    margin-right: 0;
     width: 170px;
-    margin-right: 0px;
+
 }
 
 
 #login:hover{
-    background-color: rgb(91, 173, 126);
+    background-color: rgb(103, 191, 141);
 
 }
 
 #register:hover{
-    background-color: rgb(209, 154, 77);
+    background-color: rgb(207, 161, 97);
     color: white;
 }
 
 
 
 main{
-    background-image: url(./Képek/wwwwwwwwwwww.avif);
+    background-image: url(../Képek/wwwwwwwwwwww.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    opacity: 0.9;
     padding: 50px;
 }
 
 .recipes-border{
    height: 280px;
    width: 200px;
-   background-color: white;
+   background-color: rgb(209, 211, 211);
    border-radius: 30px;
    position: relative;
    margin-bottom: 80px;
@@ -232,7 +245,7 @@ main{
     top: 200px;
     width: 100%;
     height: 3px;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(149, 143, 143);
     border: none;
 }
 
@@ -240,7 +253,7 @@ main{
     position: absolute;
     top: 220px;
     left: 10px;
-    color: grey;
+    color: rgb(50, 49, 49);
 }
 
 .button{

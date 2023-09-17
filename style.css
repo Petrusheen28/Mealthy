@@ -142,6 +142,16 @@ aside{
     font-family: 'Marck Script', cursive;
 }
 
+#name2{
+    font-size: 30px;
+    font-family: 'Marck Script', cursive;
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+
 .signup{
     margin-top: 40px;
     margin-left: 0;
@@ -408,8 +418,8 @@ main{
 
 @media only screen and (max-width: 850px){
     #plate{
-        left: 360px;
-        bottom: 170px;
+        left: 370px;
+        bottom: 180px;
         height: 70px;
       }
   }
@@ -454,9 +464,7 @@ main{
   }
 
   #plate{
-    left: 380px;
-    bottom: 140px;
-    height: 70px;
+    display: none;
   }
 
   main{
@@ -467,13 +475,24 @@ main{
     display: none;
   }
 
+  #search{
+    width: 200px;
+    margin-left: 180px;
+
 }
 
-@media only screen and (max-width: 760px){
-    #plate{
-        left: 380px;
-        bottom: 180px;
-      }
+#name2{
+    display: inline;
+    position: absolute;
+    bottom: 110px;
+}
+
+}
+
+@media only screen and (max-width: 759px){
+    #name2{
+        bottom: 157px;
+    }
 }
 
 
@@ -492,11 +511,6 @@ main{
       }
 }
 
-@media only screen and (max-width: 630px){
-#plate{
-    display: none;
-  }
-}
 
 @media only screen and (max-width: 600px){
     .recipes-border{
@@ -507,20 +521,41 @@ main{
         bottom: 150px;
         left: 15px;
       }
+
+      #search{
+        display: none;
+    
+    }
+
+    .top1{
+        display: flex;
+
+    }
+
+    #magnify{
+        display: none;
+    }
+
+    #magnify2{
+        display: inline;
+        height: 33px;
+        width: 40px;
+        transition-duration: 300ms;
+    }
+
+    #magnify2:hover{
+        fill: white;
+    }
+    
 }
 
 @media only screen and (max-width: 530px){
     main{
-        /* grid-template-columns: repeat(1, 1fr); */
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    #search{
-        width: 250px;
-    
-    }
 
     .recipes-border{
         width: 230px;
@@ -545,46 +580,42 @@ main{
         
     }
     
-}
-
-@media only screen and (max-width: 470px){
-    #search{
-        width: 200px;
-    
+    #name2{
+        bottom: 192px;
     }
 }
 
-@media only screen and (max-width: 420px){
-    #search{
-        width: 150px;
-    
-    } 
+@media only screen and (max-width: 490px){
+    #name2{
+        bottom: 246px;
+    }
 }
 
-@media only screen and (max-width: 370px){
-    #search{
-        display: none;
-    
-    } 
-
-    .top1{
-        display: flex;
-
+@media only screen and (max-width: 423px){
+    #name2{
+        bottom: 290px;
     }
+}
 
-    #magnify{
-        display: none;
-    }
-
-    #magnify2{
+@media only screen and (max-width: 390px){
+    #menu{
         display: inline;
-        height: 33px;
-        width: 40px;
-        transition-duration: 300ms;
     }
 
-    #magnify2:hover{
+    #menu:hover{
         fill: white;
     }
-    
+
+    #tune{
+        display: none;
+    }
+
+    #filter{
+        display: none;
+    }
+
+    #account-circle2{
+        display: none;
+    }
+
 }

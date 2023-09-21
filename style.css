@@ -57,9 +57,9 @@ header{
     display: none;
 }
 
-.icons svg{
+.icons svg, #icons2 svg{
     transition-duration: 300ms;
-
+    cursor: pointer;
 }
 
 .icons svg:hover{
@@ -148,6 +148,7 @@ aside{
   
 #menu2{
     display: none;
+   
 }
 
 .signup{
@@ -257,6 +258,7 @@ main{
     transition-duration: 250ms;
     border: none;
     box-shadow: 5px 5px 10px gray;
+    cursor: pointer;
 }
 
 .button:hover{
@@ -323,6 +325,13 @@ main{
 
       #menu2{
         display: block;
+        padding: 3px;
+      }
+
+      #menu2:hover{
+        fill:white;
+        background-color: black;
+        border-radius: 50px;
       }
 
 
@@ -330,7 +339,7 @@ main{
         display: inline;
         margin: 0;
         font-size: 3rem;
-       
+     
     }
     
     #plate{

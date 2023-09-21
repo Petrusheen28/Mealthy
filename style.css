@@ -15,24 +15,23 @@ header{
     position: relative;
 }
 
-
-.top1{
+#top1{
     display: flex;
     justify-content: space-between;
-    margin: 30px;
+    margin: 20px;
 }
-
 
 #search{
     padding: 10px;
     border-radius: 5px;
     width: 300px;
-    background-color: rgb(248, 244, 244);
-    box-shadow: 5px 5px 10px gray;
+    background-color: #f8f4f4;
+    box-shadow: 5px 5px 10px #808080;
 }
 
 #search:focus{
-    outline: 2px solid rgb(26, 97, 26);
+    border-color: #1a611a;
+    outline: none;
 }
 
 #search-magnify{
@@ -48,10 +47,15 @@ header{
 
 }
 
-#magnify2{
+#name2{
+    font-size: 30px;
+    font-family: 'Marck Script', cursive;
     display: none;
 }
 
+#magnify2{
+    display: none;
+}
 
 .icons svg{
     transition-duration: 300ms;
@@ -68,6 +72,9 @@ header{
     display: none;
 }
 
+#menu{
+    display: none;
+}
 
 #plate{
     position: absolute;
@@ -83,18 +90,19 @@ h1{
     text-decoration: underline;
 }
 
-
-
 .links{
     margin-top: 20px;
     margin-left: 30px;
     margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .links a{
     text-decoration: none;
     color: rgb(50, 49, 49);
     margin-right: 15px;
+    margin-bottom: 15px;
     border: 1px solid gray;
     padding: 12px 15px;
     border-radius: 40px;
@@ -103,52 +111,42 @@ h1{
     box-shadow: 5px 5px 10px gray;
 }
 
-
 .links a:hover{
     background-color: rgb(208, 195, 120);
     color: white;
 }
 
-#cooking{
-    margin-top: auto;
-}
-
 aside{
-    position: relative;
     background-color: white;
     grid-row: 1 / -1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 2;
 }
 
+#account-circle2-1{
+    display: none;
+}
 
-.picture-shadow2{
-    position: absolute;
-    height: 105px;
-    width: 100px;
-    background-color: rgb(225, 222, 222);
-    left: 56px;
-    top: 163px;
-    border-radius: 80%;
-    opacity: 0.3;
-    box-shadow: 0px 5px 10px 10px rgb(174, 172, 172);
+#filter2{
+    display: none;
+}
+
+#tune2{
+    display: none;
 }
 
 #name{
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 2rem;
     font-family: 'Marck Script', cursive;
 }
 
-#name2{
-    font-size: 30px;
-    font-family: 'Marck Script', cursive;
-    display: none;
+#account-circle{
+    filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 0.4));
 }
-
-#menu{
+  
+#menu2{
     display: none;
 }
 
@@ -162,7 +160,7 @@ aside{
 .signup a{
     margin-bottom: 15px;
     margin-right: 0;
-    width: 170px;
+    width: 155px;
     text-decoration: none;
     color: rgb(50, 49, 49);
     border: 1px solid gray;
@@ -174,10 +172,9 @@ aside{
 
 }
 
-
 #login:hover{
     background-color: rgb(103, 191, 141);
-
+    color: white;
 }
 
 #register:hover{
@@ -185,115 +182,77 @@ aside{
     color: white;
 }
 
-
+#cooking{
+    margin-top: auto;
+}
 
 main{
     background-image: url(./Képek/wwwwwwwwwwww.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     opacity: 0.9;
-    padding: 50px;
+}
+
+#recipes-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
 }
 
 .recipes-border{
-   height: 280px;
-   width: 200px;
-   background-color: rgb(232, 235, 235);
-   border-radius: 30px;
-   position: relative;
-   margin-bottom: 80px;
-   margin-top: 20px;
-   box-shadow: 5px 5px 10px grey;
-   margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    height: 280px;
+    width: 220px;
+    background-color: rgb(232, 235, 235);
+    border-radius: 30px;
+    margin: 50px 20px 30px 20px;
+    box-shadow: 5px 5px 10px grey;
+    
 }
 
 .picture {
     position: absolute;
     bottom: 150px;
-    left: 15px;
+    left: 25px;
     z-index: 2;
+    filter: drop-shadow(8px 8px 5px rgb(0 0 0 / 0.4));
 }
-
-.picture-shadow{
-    position: absolute;
-    height: 105px;
-    width: 120px;
-    background-color: rgb(156, 152, 152);
-    z-index: 1;
-    left: 30px;
-    border-radius: 80%;
-    opacity: 0.3;
-    box-shadow: 0px 5px 10px 10px rgb(156, 152, 152);
-    
-}
-
 
 .recipe-name{
-    position: absolute;
-    top: 120px;
-    text-align: center;
+   text-align: center; 
     
-}
-
-
-.star1{
-    position: absolute;
-    top: 178px;
-    left: 60px;
-}
-
-.star2{
-    position: absolute;
-    top: 178px;
-    left: 75px;
-}
-
-.star3{
-    position: absolute;
-    top: 178px;
-    left: 90px;
-}
-
-.star4{
-    position: absolute;
-    top: 178px;
-    left: 105px;
-}
-
-.star5{
-    position: absolute;
-    top: 178px;
-    left: 120px;
+    
 }
 
 .hr{
-    position: absolute; 
-    top: 200px;
+    
     width: 100%;
     height: 3px;
     background-color: rgb(149, 143, 143);
     border: none;
 }
 
+.recipes-bottom{
+    display: flex;
+    flex-direction: row; 
+}
+
 .time{
-    position: absolute;
-    top: 220px;
-    left: 10px;
+    margin-right: 50px;
     color: rgb(50, 49, 49);
 }
 
 .button{
-    position: absolute;
+    margin-top: 5px;
     width: 80px;
     height: 35px;
-    top:228px;
-    left: 105px;
     border-radius: 5px;
-    color: rgb(20, 138, 20);
+    color: #148a14;
     background-color: rgb(200, 233, 200);
     transition-duration: 250ms;
     border: none;
@@ -305,231 +264,91 @@ main{
     color: white;
 }
 
-
-@media only screen and (max-width: 1400px) {
-    main{
-        grid-template-columns: repeat(4, 1fr);
-  }
-
-  .recipes-border{
-    width: 230px;
-  }
-
-  .picture{
-    bottom: 150px;
-    left: 33px;
-  }
-
-#plate{
-  left: 770px;
-  bottom: 35px;
-}
-}
-
-@media only screen and (max-width: 1320px){
+@media only screen and (max-width: 1410px){
     #plate{
-        height: 140px;
+        left: 760px;
       }
 }
 
 @media only screen and (max-width: 1300px){
-
-.recipes-border{
-    width: 200px;
-}
-
-.picture {
-    bottom: 150px;
-    left: 15px;
-}
-}
-
-@media only screen and (max-width: 1250px){
     #plate{
-        height: 120px;
+        height: 130px;
       }
 }
 
-@media only screen and (max-width: 1180px){
-    main{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .recipes-border{
-        width: 230px;
-      }
-    
-      .picture{
-        bottom: 150px;
-        left: 33px;
-      }
-    
-}
-
-@media only screen and (max-width: 1150px){
+@media only screen and (max-width: 1270px){
     #plate{
-        left: 550px;
-        bottom: 120px;
-        height: 90px;
+        left: 480px;
+        bottom: 145px;
+        height: 80px;
       }
 }
 
-@media only screen and (max-width: 1060px){
-
-    .recipes-border{
-        width: 200px;
+@media only screen and (max-width: 980px){
+    body{
+        grid-template-columns: 55px 1fr;
       }
-
-      .picture {
-        bottom: 150px;
-        left: 15px;
-    }
-}
-
-@media only screen and (max-width: 990px){
-    #plate{
-        left: 520px;
-        bottom: 120px;
-        height: 90px;
-      }
-}
-
-@media only screen and (max-width: 960px){
-
-    main{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .recipes-border{
-        width: 230px;
-      }
-    
-      .picture{
-        bottom: 150px;
-        left: 33px;
-      }
-
-      #plate{
-        left: 400px;
-        bottom: 170px;
-        height: 90px;
-      }
-}
-
-
-@media only screen and (max-width: 850px){
-    #plate{
-        left: 370px;
-        bottom: 180px;
-        height: 70px;
-      }
-  }
-
-@media only screen and (max-width: 800px){
-    .recipes-border{
-        width: 200px;
-      }
-    
-      .picture{
-        bottom: 150px;
-        left: 15px;
-      }
-  }
-  
-
-@media only screen and (max-width: 770px) {
-  #account-circle2{
-    display: inline;
-    height: 33px;
-}
-
-  body{
-    grid-template-columns: 0px 1fr;
-  }
-
-  #name{
-    display: none;
-
-  }
-
-  #account-circle{
-    display: none;
-  }
-
-  .signup{
-    display: none;
-  }
-
-  .picture-shadow2{
-    display: none;
-  }
-
-  #plate{
-    display: none;
-  }
-
-  main{
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  #cooking{
-    display: none;
-  }
-
-  #search{
-    width: 200px;
-    margin-left: 180px;
-
-}
-
-#name2{
-    display: inline;
-    position: absolute;
-    bottom: 110px;
-}
-
-}
-
-@media only screen and (max-width: 759px){
-    #name2{
-        bottom: 157px;
-    }
-}
-
-
-@media only screen and (max-width: 740px){
-    main{
-        grid-template-columns: repeat(2, 1fr);
-      }
-    
-      .recipes-border{
-        width: 230px;
-      }
-    
-      .picture{
-        bottom: 150px;
-        left: 33px;
-      }
-}
-
-
-@media only screen and (max-width: 600px){
-    .recipes-border{
-        width: 200px;
-      }
-    
-      .picture{
-        bottom: 150px;
-        left: 15px;
-      }
-
-      #search{
+   
+    #name{
         display: none;
     
+      }
+
+      #account-circle{
+        display: none;
+      }
+
+      .signup{
+        display: none;
+      }
+    
+      .picture-shadow2{
+        display: none;
+      }
+
+      #cooking{
+        display: none;
+      }
+
+      #account-circle2-1{
+        display: block;
+      }
+
+      #icons2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+
+      #menu2{
+        display: block;
+      }
+
+
+    #name2{
+        display: inline;
+        margin: 0;
+        font-size: 3rem;
+       
+    }
+    
+    #plate{
+        display: none;
     }
 
-    .top1{
-        display: flex;
+}
 
+@media only screen and (max-width: 770px) {
+    #search{
+        width: 200px;
+    }
+  }
+
+@media only screen and (max-width: 670px) {
+    #search{
+        display: none;
+    
     }
 
     #magnify{
@@ -538,7 +357,7 @@ main{
 
     #magnify2{
         display: inline;
-        height: 33px;
+        height: 31px;
         width: 40px;
         transition-duration: 300ms;
     }
@@ -546,60 +365,30 @@ main{
     #magnify2:hover{
         fill: white;
     }
-    
-}
 
-@media only screen and (max-width: 530px){
-    main{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  }
 
-
-    .recipes-border{
-        width: 230px;
-        
-    }
-
-    .picture{
-        bottom: 150px;
-        left: 33px;
+@media only screen and (max-width: 600px){
+     body{
+        grid-template-columns: 0px 1fr;
       }
 
-}
-
-@media only screen and (max-width: 510px){
-    .links{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .links a{
-        margin-top: 10px;
+      menu2{
+        display: none;
         
-    }
-    
-    #name2{
-        bottom: 192px;
-    }
-}
+      }
 
-@media only screen and (max-width: 490px){
-    #name2{
-        bottom: 246px;
-    }
-}
-
-@media only screen and (max-width: 423px){
-    #name2{
-        bottom: 290px;
-    }
+        #account-circle2{
+          display: inline;
+          height: 33px;
+      }
+      
 }
 
 @media only screen and (max-width: 390px){
     #menu{
         display: inline;
+        transition-duration:300ms ;
     }
 
     #menu:hover{

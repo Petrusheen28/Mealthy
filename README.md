@@ -1,3 +1,3 @@
 # Mealthy
 
-[**Demo**](https://petrusheen28.github.io/Recipes/)
+[**Demo**](https://petrusheen28.github.io/Mealthy/)

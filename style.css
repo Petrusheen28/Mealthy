@@ -11,7 +11,7 @@ body{
 }
 
 header{
-    background-color:#b7bba4;
+    background-color:#c5c6b1;
     position: relative;
 }
 
@@ -80,7 +80,7 @@ header{
     position: absolute;
     left: 850px;
     bottom: 35px;
-    filter: brightness(95%) contrast(60%);
+    filter: brightness(120%) contrast(40%);
     
 }
 
@@ -188,7 +188,7 @@ aside{
 }
 
 main{
-    background-image: url(./Képek/wwwwwwwwwwww.avif);
+    background-image: url(./Pictures/wwwwwwwwwwww.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
